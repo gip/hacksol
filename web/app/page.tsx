@@ -1,15 +1,11 @@
-'use client';
-
-import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '@/components/Welcome/Welcome';
 import { Header } from '@/components/Header/Header';
+import { Home } from '@/components/Home/Home';
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <Welcome />
-      <ColorSchemeToggle />
+      <Home />
     </>
   );
 }
