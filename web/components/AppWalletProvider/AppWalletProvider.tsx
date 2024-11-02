@@ -5,6 +5,7 @@ import {
   ConnectionProvider,
   WalletProvider,
 } from "@solana/wallet-adapter-react";
+import { CrossmintSolanaWalletAdapter, networkToCrossmintEnvironment } from "@crossmint/connect";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -25,6 +26,9 @@ export default function AppWalletProvider({
       () => [
         // manually add any legacy wallet adapters here
         // new UnsafeBurnerWalletAdapter(),
+        new CrossmintSolanaWalletAdapter({
+          environment: networkToCrossmintEnvironment(network)
+      }),
       ],
       [],
     );

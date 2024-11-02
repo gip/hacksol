@@ -24,7 +24,7 @@ export function Home() {
 
     return (
     <>
-      {connected && <Workbench />}
+      {connected && <Workbench connected={connected} publicKey={publicKey}/>}
       {!connected && <Welcome />}
     </>
   );
