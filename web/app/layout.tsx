@@ -6,8 +6,8 @@ import { theme } from '../theme';
 import AppWalletProvider from "../components/AppWalletProvider/AppWalletProvider";
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'Hacksol',
+  description: 'A hackathon project around DeFI agents',
 };
 
 export default function RootLayout({ children }: { children: any }) {
